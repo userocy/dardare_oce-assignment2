@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 int main() {
-    char user[10];
+    char user[10], courseyr[5];
     int age;
     
     printf("Hello World!\n");
@@ -9,8 +9,10 @@ int main() {
     scanf("%s", user);
     printf("Enter age: ");
     scanf("%d", &age);
+    printf("Enter course and year: ");
+    scanf("%s", courseyr);
     
-    printf("Hello, %s! You're %d years old!", user, age);
+    printf("Hello, %s!\nYou're %d years old in %s!", user, age, courseyr);
 
     return 0;
 }
